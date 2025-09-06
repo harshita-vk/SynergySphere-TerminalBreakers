@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "synergysphere",
+  "main": "src/index.tsx",
+  "compatibility_date": "2024-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "pages_build_output_dir": "./dist",
+  
+  // D1 Database for user data, projects, tasks, etc.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "synergysphere-production",
+      "database_id": "placeholder-will-be-set-after-creation"
+    }
+  ]
+}
